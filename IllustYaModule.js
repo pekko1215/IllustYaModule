@@ -1,5 +1,5 @@
 + function() {
-	const EndPoint = "http://www.irasutoya.com/feeds/posts/summary"
+	const EndPoint = "https://www.irasutoya.com/feeds/posts/summary"
 	var _ILY = function(){
 		window._jsonpFunc = {
 			length : 0
