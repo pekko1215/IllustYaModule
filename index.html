@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>いらすとや</title>
+    <script type="text/javascript" src="IllustYaModule.js"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+        ILYModule((ilyModule) => {
+            window.ilyModule = ilyModule;
+            document.querySelector('input').onclick = function(){
+				ilyModule.getRandomIllust().then((illust)=>{
+					document.querySelector('img').src = illust.originalURL;
+				})
+            }
+        });
+    }
+    </script>
+</head>
+	<input type="button" value="ランダム！">
+	<img>
+<body>
+</body>
+
+</html>
